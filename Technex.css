@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    object-fit:cover;
+}
+body{
+    background: url(ak.jpg);
+}
+:root{
+    --navbar-height: 59px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background: none;
+    margin: 5px 15px;
+}
+#logo{
+    margin: 5px 15px;
+
+}
+#logo img{
+height: 40px;
+margin: 1px 3px;
+}
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ::before{
+    /* content: ""; */
+    background-color: rgb(65, 56, 56); 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 12px;
+
+}
+#navbar ul li a{
+    color: blue;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: none;
+    transition: 300ms;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(238, 52, 52);
+
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-size: 30px;
+}
+#home ::before{
+    background-color: url(../bg1.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.67;
+}
+
